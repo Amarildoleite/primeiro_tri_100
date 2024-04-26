@@ -33,6 +33,6 @@ body {
 }
 .botao {
     font-family: "chakra Petch", sans-serif;
-    background-color: var(--botao-inativo);
+    
     color: var(--branco);
 }
