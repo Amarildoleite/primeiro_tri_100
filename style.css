@@ -33,4 +33,5 @@ body {
 }
 .botao {
     font-family: "chakra peth", sans-serif;
+    background-color: var(--botao-inativo);
 }
