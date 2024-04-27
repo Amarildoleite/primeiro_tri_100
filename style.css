@@ -47,15 +47,15 @@ body {
     border-top: none;
 }
 
-.botao:first-child {
-    border-radius: 40px 40px 0 0;
-}
-
 /**.botao:first-child {
     border-radius: 40px 40px 0 0;
 }**/
 
-.botoes {
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+/**.botoes {
     display: block;
 }
 
@@ -69,9 +69,9 @@ body {
     .botao:last-child {
         border-radius: 0 40px 0 0;
     }
-}
+}**/
 
-/**@media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     .botoes {
         display: flex;
     }
@@ -81,4 +81,4 @@ body {
     .botao:last-child {
         border-radius: 0 40px 0 0;
     }
-}**/
+}
