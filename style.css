@@ -80,7 +80,7 @@ body {
 }
 .contador-digito {
     padding: 0 16px;
-    margin: 0px;
+    text-align: center;
 }
 .contador-digito-numero {
     font-size: 80px;
