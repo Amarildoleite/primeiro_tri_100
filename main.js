@@ -15,7 +15,6 @@ const tempoObjetivo1 = new Date("2024-10-05T00:00:00");
 const tempoObjetivo2 = new Date("2024-12-05T00:00:00");
 const tempoObjetivo3 = new Date("2024-12-05T00:00:00");
 const tempoObjetivo4 = new Date("2025-02-05T00:00:00");
-
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 function atualizaCronometro() {
 for (let i=0; i<contadores.length;i++) {
