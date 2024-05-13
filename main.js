@@ -67,17 +67,18 @@ function calculaTempo(tempoObjetivo) {
 if (tempoFinal>0){
     return dias + ":" + horas + ":" + minutos + ":" + segundos;
     }else {
-    return "Prazo Esgotado"
+    return [0,0,0,0]
     }
 }
 
 function atualizaCronometro() {
+    document.getElementById("dias0").textContent=calculaTempo(tempos[0]);
     for (let i=0; i<contadores.length;i++) {
-        contadores[i].textContent = calculaTempo(tempos[i]); 
+        //contadores[i].textContent = calculaTempo(tempos[i]); 
         }  
     }
 function comecaCronometro(){
     atualizaCronometro()
     setInterval(atualizaCronometro,1000);
 }
-//comecaCronometro();
+comecaCronometro();
