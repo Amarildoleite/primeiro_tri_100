@@ -79,7 +79,7 @@ function atualizaCronometro() {
     document.getElementById("min"+i).textContent = calculaTempo(tempos[i])[2];
     document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
         }  
-    }
+}
 function comecaCronometro(){
     atualizaCronometro()
     setInterval(atualizaCronometro,1000);
