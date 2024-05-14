@@ -65,19 +65,19 @@ function calculaTempo(tempoObjetivo) {
     minutos %=60;
     horas %=60;
 if (tempoFinal>0){
-    return dias + ":" + horas + ":" + minutos + ":" + segundos;
+    return [dias,horas,minutos,segundos];
     }else {
     return [0,0,0,0]
     }
 }
 
 function atualizaCronometro() {
-    document.getElementById("dias0").textContent = calculaTempo(tempos[0])[0];
-    document.getElementById("horas0").textContent = calculaTempo(tempos[0])[1];
-    document.getElementById("min0").textContent = calculaTempo(tempos[0])[2];
-    document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
+    
     for (let i=0; i<contadores.length;i++) {
-        //contadores[i].textContent = calculaTempo(tempos[i]); 
+        document.getElementById("dias"+i).textContent = calculaTempo(tempos[i])[0];
+    document.getElementById("horas"+i).textContent = calculaTempo(tempos[i])[1];
+    document.getElementById("min"+i).textContent = calculaTempo(tempos[i])[2];
+    document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
         }  
     }
 function comecaCronometro(){
